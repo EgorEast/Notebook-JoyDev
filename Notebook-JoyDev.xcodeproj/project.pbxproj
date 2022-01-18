@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0503AC172795801700466562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503AC162795801700466562 /* AppDelegate.swift */; };
-		0503AC1B2795801700466562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503AC1A2795801700466562 /* ViewController.swift */; };
 		0503AC202795801700466562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0503AC1F2795801700466562 /* Assets.xcassets */; };
 		0503AC232795801700466562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0503AC212795801700466562 /* LaunchScreen.storyboard */; };
+		0503ACAD2795BA4B00466562 /* RegistrationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503ACAC2795BA4B00466562 /* RegistrationScreenViewController.swift */; };
+		05B7785F2796B019009BA00E /* EntryOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7785E2796B019009BA00E /* EntryOptionTableViewCell.swift */; };
+		05B778622796C472009BA00E /* TextFieldsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B778612796C472009BA00E /* TextFieldsTableViewCell.swift */; };
+		05B778642796DEAB009BA00E /* AgreementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B778632796DEAB009BA00E /* AgreementTableViewCell.swift */; };
+		05B778662796E81E009BA00E /* RegisterButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B778652796E81E009BA00E /* RegisterButtonTableViewCell.swift */; };
+		05B778682796F13F009BA00E /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B778672796F13F009BA00E /* FormsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0503AC132795801700466562 /* Notebook-JoyDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notebook-JoyDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0503AC162795801700466562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0503AC1A2795801700466562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0503AC1F2795801700466562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0503AC222795801700466562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0503AC242795801700466562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0503ACAC2795BA4B00466562 /* RegistrationScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenViewController.swift; sourceTree = "<group>"; };
+		05B7785E2796B019009BA00E /* EntryOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryOptionTableViewCell.swift; sourceTree = "<group>"; };
+		05B778612796C472009BA00E /* TextFieldsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsTableViewCell.swift; sourceTree = "<group>"; };
+		05B778632796DEAB009BA00E /* AgreementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementTableViewCell.swift; sourceTree = "<group>"; };
+		05B778652796E81E009BA00E /* RegisterButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonTableViewCell.swift; sourceTree = "<group>"; };
+		05B778672796F13F009BA00E /* FormsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +62,58 @@
 		0503AC152795801700466562 /* Notebook-JoyDev */ = {
 			isa = PBXGroup;
 			children = (
-				0503AC162795801700466562 /* AppDelegate.swift */,
-				0503AC1A2795801700466562 /* ViewController.swift */,
 				0503AC1F2795801700466562 /* Assets.xcassets */,
 				0503AC212795801700466562 /* LaunchScreen.storyboard */,
+				0503AC162795801700466562 /* AppDelegate.swift */,
+				0503ACA82795B9A000466562 /* RegistrationScreen */,
 				0503AC242795801700466562 /* Info.plist */,
 			);
 			path = "Notebook-JoyDev";
+			sourceTree = "<group>";
+		};
+		0503ACA82795B9A000466562 /* RegistrationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0503ACAB2795BA2000466562 /* Model */,
+				0503ACAA2795BA1600466562 /* ViewModel */,
+				0503ACA92795B9E000466562 /* View */,
+			);
+			path = RegistrationScreen;
+			sourceTree = "<group>";
+		};
+		0503ACA92795B9E000466562 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0503ACAC2795BA4B00466562 /* RegistrationScreenViewController.swift */,
+				05B778602796B01D009BA00E /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0503ACAA2795BA1600466562 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0503ACAB2795BA2000466562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05B778602796B01D009BA00E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				05B7785E2796B019009BA00E /* EntryOptionTableViewCell.swift */,
+				05B778672796F13F009BA00E /* FormsTableViewCell.swift */,
+				05B778612796C472009BA00E /* TextFieldsTableViewCell.swift */,
+				05B778632796DEAB009BA00E /* AgreementTableViewCell.swift */,
+				05B778652796E81E009BA00E /* RegisterButtonTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0503AC1B2795801700466562 /* ViewController.swift in Sources */,
 				0503AC172795801700466562 /* AppDelegate.swift in Sources */,
+				05B7785F2796B019009BA00E /* EntryOptionTableViewCell.swift in Sources */,
+				05B778662796E81E009BA00E /* RegisterButtonTableViewCell.swift in Sources */,
+				0503ACAD2795BA4B00466562 /* RegistrationScreenViewController.swift in Sources */,
+				05B778642796DEAB009BA00E /* AgreementTableViewCell.swift in Sources */,
+				05B778682796F13F009BA00E /* FormsTableViewCell.swift in Sources */,
+				05B778622796C472009BA00E /* TextFieldsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
